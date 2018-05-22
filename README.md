@@ -13,7 +13,9 @@ Spoiler :
   - 1 : Jouer avec les nombres
   - 2 : Jouer avec les lettres
   - 0 : Quitter
+```
 /!\ Attention, easter-egg peut-être présent ici ...
+```
 
 ## Projet du jour :
 
@@ -53,7 +55,7 @@ En lançant un serveur à l'adresse http://localhost:3000 :
 ```
 Enfin, en regardant de très prêt avec votre EDI favori !
 
-*PS : Merci pour la correction ! 😉*
+*PS :* 😉 *Merci pour la correction !* 
 
 **NOTA : $ = terminal || > = console rails || @ = internet browser**
 
