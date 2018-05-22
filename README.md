@@ -1,57 +1,53 @@
-# Week n°X on Day n°X - THP by Team BDX - XXXXX
+# Week n°8 on Day n°2 - THP by Team BDX - @massimo
+# Brave calcoulette sous Javascript
 
 ## Projet du jour :
 
-Le projet du jour consisiste
+Le projet du jour consiste à développer sous javascript une calculatrice avec les fonctions standardsd'une calculette type CE2. Celle-ci devra fonctionner sur une application déployée en ligne. Ici, j'ai choisi de créer une application rails (entrainement oblige), et de pusher le tout sur heroku.
 
 ## Pré-requis et installation :
 
 1 - Veuillez svp vous relever de votre PLS.
 
-2 - Veuillez cloner ce repo sur votre machine avec la commande suivante (le dossier créé s'appelera "WXDX_TeamBDX_XXXXXX") :
+2 - Veuillez cloner ce repo sur votre machine avec la commande suivante (le dossier créé s'appelera "W8D2_TeamBDX_Calculatrice_JS") :
 
 ```
-  $ git clone
+  $ git clone https://github.com/iMassim0/W8D2_TeamBDX_Calculatrice_JS
 ```
 
-3 - Se rendre dans le dossier souhaité, et effectuer ces XX commandes suivantes pour initialiser le fonctionnement :
+3 - Se rendre dans le dossier souhaité, et effectuer cette ligne de commandes suivante pour initialiser le fonctionnement :
 
 ```
-  $ bundle install &&
+  $ bundle install --without production
 ```
 
+**NOTA : Tu peux, si la gem PG est installée sur ta machine, effectuer un `bundle install` simple.**
 
-## Fonctionnement des exercices :
+## Contenu et fonctionnement de l'application :
 
-### Exercice
+Et voici une petite calculette des familles réalisée avec ❤️. Le style de départ est calqué sur la brave calculatrice de macOSX.
 
-Cet exercice
+Pour tester celle-ci, plusieurs choix :
 
+En ligne :
 ```
-  $
+  @ https://calc-teambdx.herokuapp.com/
 ```
-
-*PS : .*
-
-## Conditions de test des exercices pour les corrections
-
-**Pour faciliter la correction des exercices précédents voici les éléments à tester dans la console rails, si vous le souhaitez. Le but est de créer des instances de classes, et des liaisons entre celles-ci pour observer le bon fonctionnement des programmes. Les commandes peuvent être :**
-
-**NOTA : $ = terminal || > = console rails**
-
-### Exercice
-
+En lançant un serveur à l'adresse http://localhost:3000 :
 ```
-  >
-
-  $
+  $ rails server
 ```
+Enfin, en regardant de très prêt avec votre EDI favori !
 
-## Contributeurs
+*PS : Merci pour la correction ! 😉*
 
-@bab - Baptiste ROGEON
+**NOTA : $ = terminal || > = console rails || @ = internet browser**
+
+## Contributeur
 
 @massimo - Maxime FLEURY
+
+> avec l'aide précieuse de Mister @bab
 
 <p align="center">
   <img src="THP_BDX.png"/>
@@ -59,11 +55,4 @@ Cet exercice
 
 ## Pour aller plus loin
 
-### Au début, t'es comme ca :
-
-
-### A 18h, tu te dis ca :
-
-
-### A 23h52 :
-
+###
