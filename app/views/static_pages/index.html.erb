@@ -1,41 +1,42 @@
 <div class="container auto w-75">
-  <h3>Calculatrice by <strong>@massimo</strong> - Team BDX</h3>
+
   <br>
   <div class="calc w-75 h-75 d-flex-column justify-content-center">
 
       <div class="block-p">
-        <button class="alert-dark w-100 result">Result</button>
+        <button class="alert-dark w-100 result" id="result">What do you want to <strong>calculate</strong> today?</button>
       </div>
 
       <div class="blocks">
-        <button type="button" class="bto block-1 btn-primary w-75 d-inline-block">AC</button>
-        <button type="button" class="bto block btn-warning w-25 d-inline-block">/</button>
+        <button type="button" onclick="clear();show()" value="C" class="bto block-1 btn-primary w-75 d-inline-block">Clear</button>
+        <button type="button" onclick="action(this.value);showMemory()" value="/" id="divide" class="bto block btn-warning w-25 d-inline-block">÷</button>
       </div>
 
       <div class="blocks">
-        <button type="button" class="bto block-1 lol btn-light w-25">7</button>
-        <button type="button" class="bto block-n lol btn-light w-25">8</button>
-        <button type="button" class="bto block-n lol btn-light w-25">9</button>
-        <button type="button" class="bto lol btn-warning w-25">*</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="7" class="bto block-1 lol btn-light w-25">7</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="8" class="bto block-n lol btn-light w-25">8</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="9" class="bto block-n lol btn-light w-25">9</button>
+        <button type="button" onclick="action(this.value);showMemory()" value="*" id="multiply" class="bto lol btn-warning w-25">×</button>
       </div>
 
       <div class="blocks">
-        <button type="button" class="bto block-1 btn-light w-25">4</button>
-        <button type="button" class="bto block-n btn-light w-25">5</button>
-        <button type="button" class="bto block-n btn-light w-25">6</button>
-        <button type="button" class="bto btn-warning w-25">-</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="4" class="bto block-1 btn-light w-25">4</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="5" class="bto block-n btn-light w-25">5</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="6" class="bto block-n btn-light w-25">6</button>
+        <button type="button" onclick="action(this.value);showMemory()" value="-" id="substract" class="bto btn-warning w-25">-</button>
       </div>
 
       <div class="blocks">
-        <button type="button" class="bto block-1 btn-light w-25">1</button>
-        <button type="button" class="bto block-n btn-light w-25">2</button>
-        <button type="button" class="bto block-n btn-light w-25">3</button>
-        <button type="button" class="bto btn-warning w-25">+</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="1" class="bto block-1 btn-light w-25">1</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="2" class="bto block-n btn-light w-25">2</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="3" class="bto block-n btn-light w-25">3</button>
+        <button type="button" onclick="action(this.value);showMemory()" value="+" id="add" class="bto btn-warning w-25">+</button>
       </div>
 
       <div class="blocks">
-        <button type="button" class="bto block-1 btn-light w-75 bg">0</button>
-        <button type="button" class="bto btn-warning w-25">=</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="0" class="bto block-1 btn-light w-50 bg">0</button>
+        <button type="button" onclick="input(this.value);showBuffer()" value="." class="bto block-n btn-warning w-25">,</button>
+        <button type="button" onclick="equal();showMemory()" value="=" class="bto btn-warning w-25">=</button>
       </div>
 
   </div>

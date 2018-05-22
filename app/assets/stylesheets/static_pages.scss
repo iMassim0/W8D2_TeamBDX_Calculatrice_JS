@@ -6,18 +6,28 @@
   margin: 0 25%;
 }
 
+*:focus {
+    outline: 0 !important;
+}
 
 .calc {
-  font-size: 1.5vw;
   font-size: 3vh;
 }
 
 .result {
-  height: 10vh;
+  height: 15vh;
+  text-align: right;
+  padding-right: 40px;
+  font-size: 4vh;
 }
 
 #logo {
   width: 150px;
+}
+
+#result {
+  background-color: rgb(135,135,135);
+  color: white;
 }
 
 .auto {
@@ -43,6 +53,9 @@
 
 #footer {
   background-color: rgb(246,247,249);
+  display:flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
   left: 0;
