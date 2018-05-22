@@ -27,8 +27,8 @@ function input(value) {
     if (!(buffer.toString().includes(".") && value === ".")) {
       buffer += value;
       document.getElementById("result").innerHTML = Number(buffer);
-      console.log(buffer);
     };
+    debug();
   };
 
 function action(symbol) {
@@ -36,17 +36,8 @@ function action(symbol) {
     memory += Number(buffer);
     buffer = 0;
     operator = symbol;
-  } else {
-
-  }
-
-  console.log("mémoire de : " + memory);
-  console.log("buffer de : " + buffer);
-  console.log("opérateur sélectionné :" + operator);
-  //
-  // if (buffer.length ==! 0 && memory.length === 0) {
-
-  // };
+  };
+  debug();
 };
 
 function equal() {
@@ -68,21 +59,41 @@ function equal() {
       refresh();
       break;
   };
+  debug();
 };
 
-function clear() {
-  buffer = 0;
-  memory = 0;
-  operator = "";
+function clean() {
+  refreshBuffer();
+  refreshMemory();
+  refreshOperator();
+  debug();
 };
 
 function refresh() {
-  buffer = "";
-  operator = "";
+  refreshBuffer();
+  refreshOperator();
+  debug();
 };
 
+function refreshBuffer() {
+  return buffer = 0;
+};
+
+function refreshMemory() {
+  return memory = 0;
+};
+
+function refreshOperator() {
+  return operator = "";
+};
+
+
 function showMemory() {
-  document.getElementById("result").innerHTML = Number(memory);
+  if (memory === 0 && operator === "") {
+    showBuffer();
+  } else {
+    document.getElementById("result").innerHTML = Number(memory);
+  }
 };
 
 function showBuffer() {
@@ -91,6 +102,12 @@ function showBuffer() {
 
 function show() {
   document.getElementById("result").innerHTML = 0;
+};
+
+function debug() {
+  console.log("mémoire de : " + Number(memory));
+  console.log("buffer de : " + Number(buffer));
+  console.log("opérateur sélectionné :" + operator);
 };
 
 // Fonctions Maths
