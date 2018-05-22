@@ -2,12 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.container {
+  margin: 0 25%;
+}
+
+
 .calc {
-  font-size: 2em;
+  font-size: 1.5vw;
+  font-size: 3vh;
 }
 
 .result {
-  height: 100px;
+  height: 10vh;
 }
 
 #logo {
@@ -37,9 +43,15 @@
 
 #footer {
   background-color: rgb(246,247,249);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
 }
 
 .bto {
-  padding: 30px 0;
+  padding: 1vw 0;
   border: 1px solid white;
+  height: 10vh;
 }
