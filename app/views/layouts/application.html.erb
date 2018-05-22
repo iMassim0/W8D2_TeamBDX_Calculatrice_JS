@@ -7,9 +7,19 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
+    <% if flash[:notice] %>
+      <%= flash[:notice] %></p>
+    <% end %>
+    <% if flash[:error] %>
+      <%= flash[:error] %></p>
+    <% end %>
+    <% flash[:error] = flash[:notice] = nil %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

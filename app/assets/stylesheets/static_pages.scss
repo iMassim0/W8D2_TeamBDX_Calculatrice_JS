@@ -1,0 +1,45 @@
+// Place all the styles related to the Static_Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.calc {
+  font-size: 2em;
+}
+
+.result {
+  height: 100px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.auto {
+  height: 83vh;
+}
+
+.block {
+    display: inline-block;
+    width: 50%;
+}
+
+.block-1 {
+    margin-right: -0.75em;
+}
+
+.block-n {
+    margin-right: -0.25em;
+}
+
+.block-p {
+    width: 98%;
+}
+
+#footer {
+  background-color: rgb(246,247,249);
+}
+
+.bto {
+  padding: 30px 0;
+  border: 1px solid white;
+}
